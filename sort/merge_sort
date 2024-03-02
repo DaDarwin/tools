@@ -1,0 +1,17 @@
+list = [6, 2, 9, 4, 3, 8, 0, 5, 1, 9, 7]
+list_a = []
+list_b = []
+
+
+def merge_sort(list):
+    for i in range(0, len(list) // 2 - 1):
+        if list[i] <= list[i + 1]:
+            list_a.append(list[i])
+
+    for i in range(len(list) // 2, len(list) - 1):
+        list_b.append(list[i])
+    print(list_a)
+    print(list_b)
+
+
+merge_sort(list)
